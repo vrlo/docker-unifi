@@ -1,5 +1,5 @@
 FROM buildpack-deps:jessie-curl
-MAINTAINER vrlo <vrovro@tis.hr>
+MAINTAINER vrlo <vrovro@gmail.com>
 
 RUN echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" \
   > /etc/apt/sources.list.d/ubnt.list \
