@@ -1,7 +1,7 @@
 FROM buildpack-deps:jessie-curl
 MAINTAINER vrlo <vrovro@gmail.com>
 
-RUN echo "deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti" \
+RUN echo "deb http://www.ubnt.com/downloads/unifi/debian unifi5 ubiquiti" \
   > /etc/apt/sources.list.d/ubnt.list \
   && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C0A52C50 \
   && apt-get update && apt-get install -y --no-install-recommends \
